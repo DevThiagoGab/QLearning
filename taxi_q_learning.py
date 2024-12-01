@@ -12,13 +12,13 @@ if not hasattr(np, "bool8"):
     np.bool8 = bool  
 
 
-alpha = 0.1  
-gamma = 0.99  
-epsilon = 1.0  
-epsilon_decay = 0.995  
+alpha = 0.5 # Aumenta a taxa de aprendizado
+gamma = 0.8 # Dá mais importância às recompensas imediatas
+epsilon = 0.5  # Reduz a exploração inicial
+epsilon_decay = 0.998  # Decaimento mais lento
 epsilon_min = 0.1  
-episodes = 5000  
-max_steps = 100  
+episodes = 10000  # Mais episódios para o aprendizado
+max_steps = 200  # Mais passos por episódio
 
 
 Q = np.zeros((n_states, n_actions))
