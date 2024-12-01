@@ -12,10 +12,10 @@ if not hasattr(np, "bool8"):
     np.bool8 = bool  
 
 
-alpha = 0.5 # Aumenta a taxa de aprendizado
-gamma = 0.8 # Dá mais importância às recompensas imediatas
-epsilon = 0.5  # Reduz a exploração inicial
-epsilon_decay = 0.998  # Decaimento mais lento
+alpha = 0.7  # Taxa de aprendizado aumentada
+gamma = 0.85  # Menos foco em recompensas futuras
+epsilon = 1.0  # Taxa inicial de exploração
+epsilon_decay = 0.999  # Decaimento mais rápido
 epsilon_min = 0.1  
 episodes = 10000  # Mais episódios para o aprendizado
 max_steps = 200  # Mais passos por episódio
